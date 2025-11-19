@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tacitus | Enterprise Narrative Intelligence</title>
+    <title>Tacitus | The Architecture of Narrative Intelligence</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -13,177 +13,246 @@
     <nav class="glass-panel">
         <div class="logo">TACITUS<span class="logo-mark">◳</span><span class="highlight">_</span></div>
         <div class="nav-links">
-            <a href="#deficit">The Problem</a>
-            <a href="#model">The Model</a>
-            <a href="#engine">Engine</a>
-            <a href="#scenarios">Use Cases</a>
-            <a href="email-native.html">Why Email-Native</a>
+            <a href="#deficit">Resolution Deficit</a>
+            <a href="#model">Dual Asymmetry</a>
+            <a href="#engine">Multi-Agent Engine</a>
+            <a href="#graph">Conflict Graph</a>
+            <a href="#scenarios">Scenarios</a>
             <a href="deployment.html">Deployment</a>
-            <a href="#access" class="btn-glow">Initialize Pilot</a>
+            <a href="email-native.html">Why Email‑Native</a>
+            <a href="research.html">Papers &amp; Lab</a>
+            <a href="#access" class="btn-glow">Initialize</a>
         </div>
     </nav>
 
     <main>
+        <!-- HERO / ENTROPY -->
         <section class="hero" id="top">
             <div class="content-wrapper hero-grid">
                 <div class="hero-copy">
-                    <div class="badge">v2.0 · ENTERPRISE INTELLIGENCE</div>
-                    <h1 class="glitch-text">CONFLICT IS<br>INFORMATION</h1>
+                    <div class="badge">v0.4 · CONFLICT INTELLIGENCE & RESOLUTION TECHNOLOGIES</div>
+                    <h1 class="glitch-text" data-text="CONFLICT IS INFORMATION">
+                        CONFLICT IS INFORMATION
+                    </h1>
                     <p class="subtitle">
-                        Tacitus turns your organization's <span class="accent">Resolution Deficit</span> into strategic clarity. 
-                        An email-native analyst that maps the hidden narratives, structured evidence, and common ground driving your high-stakes decisions.
+                        Tacitus is an email‑native, multi‑agent analysis layer that turns the
+                        <span class="accent">Resolution Deficit</span> into a map of what is really happening –
+                        grounding high‑stakes decisions in structured evidence, narratives, and common ground.
                     </p>
-                    <div style="margin-top: 2rem;">
-                        <a href="mailto:deploy@tacitus.me" class="btn-glow" style="text-decoration:none; padding: 12px 30px;">Request Briefing</a>
+                    <div class="hero-tags">
+                        <span class="tag">email‑native</span>
+                        <span class="tag">multi‑agent</span>
+                        <span class="tag">RAG‑grounded</span>
+                        <span class="tag">human‑in‑loop</span>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="mailto:hello@tacitus.me?subject=Connect%20about%20Tacitus" class="btn-accent">
+                            Connect with us to explore Tacitus
+                        </a>
                     </div>
                 </div>
-                
                 <div class="hero-panel">
                     <div class="panel-title">SYSTEM DIAGNOSTIC // LIVE</div>
                     <div class="panel-metric">
-                        <span class="metric-label">Input Stream</span>
-                        <span class="metric-value ok">GMAIL / O365 API</span>
-                    </div>
-                    <div class="panel-metric">
-                        <span class="metric-label">Narrative Entropy</span>
+                        <span class="metric-label">Resolution Deficit</span>
                         <span class="metric-value">HIGH</span>
                     </div>
                     <div class="panel-metric">
-                        <span class="metric-label">Analysis Mode</span>
-                        <span class="metric-value ok">PASSIVE / AUDIT</span>
+                        <span class="metric-label">Narrative Asymmetry</span>
+                        <span class="metric-value">SEVERE</span>
                     </div>
-                    <p style="font-size: 0.8rem; margin-top: 15px; opacity: 0.6; font-family: var(--font-mono);">
-                        > Detecting information asymmetry...<br>
-                        > Mapping colliding frames...<br>
-                        > Common ground visualized.
-                    </p>
+                    <div class="panel-metric">
+                        <span class="metric-label">Human Override</span>
+                        <span class="metric-value ok">ENFORCED</span>
+                    </div>
+                    <div class="panel-foot">
+                        <span>› Fly through the tangle.</span><br>
+                        <span>› Watch it crystallize into a conflict graph.</span>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- SECTION 0: RESOLUTION DEFICIT -->
         <section id="deficit" class="content-section">
-            <div class="section-label">01. THE PROBLEM</div>
+            <div class="section-label">0. THE PROBLEM LAYER</div>
             <div class="glass-card wide">
                 <h2>>> The Resolution Deficit</h2>
                 <p>
-                    Your organization generates conflict at the speed of cloud storage, but you resolve it at the speed of human memory.
-                    We call this the <strong>Resolution Deficit</strong>.
+                    From a systems perspective, the <span class="accent">Resolution Deficit</span> is the gap between the rate at which
+                    organisations generate conflict‑relevant information and the rate at which humans can parse, model, and act on it.
+                    Digital channels scale with storage and bandwidth; attention, working memory, and coordination capacity do not.
                 </p>
                 <p>
-                    Critical signals are buried in reply-all chains. Narratives fragment across departments. Leaders are forced to reconstruct timelines from scratch for every crisis. Tacitus does not replace decision-makers; it gives them a map.
+                    In practice this shows up as three coupled problems: detection lag (critical issues buried in volume),
+                    context fragmentation (facts scattered across tools and threads), and cognitive overload (leaders reconstructing
+                    timelines from scratch in every escalation). Tacitus treats enterprise email as a measurable data plane,
+                    applying structured extraction and graph‑based modelling so that the “state of the conflict” can be inspected,
+                    stress‑tested, and updated rather than re‑invented in every meeting.
                 </p>
-                
-                <div class="grid-3">
-                    <div class="card-cyber">
-                        <h4>Context Fragmentation</h4>
-                        <p>Facts are scattered across Slack, Email, and PDF attachments. Tacitus unifies them into a single, queryable timeline.</p>
+                <div class="grid-3 stat-cards">
+                    <div class="card-cyber small">
+                        <h4>Entropy Surface</h4>
+                        <p>Reply‑all storms, CC spirals, and Slack fragments mapped as one continuous narrative field.</p>
                     </div>
-                    <div class="card-cyber">
-                        <h4>Narrative Blindness</h4>
-                        <p>Conflict isn't just about facts; it's about stories. We detect the hidden "identity frames" that make disputes intractable.</p>
+                    <div class="card-cyber small">
+                        <h4>Signal Extraction</h4>
+                        <p>Claims, evidence, red lines, and unstated assumptions lifted out of the noise and timestamped.</p>
                     </div>
-                    <div class="card-cyber">
-                        <h4>Cognitive Overload</h4>
-                        <p>Stop reading 5,000 emails to understand a dispute. Get a structured "State of Conflict" brief in minutes.</p>
+                    <div class="card-cyber small">
+                        <h4>Explainability</h4>
+                        <p>Every insight is traceable back to specific threads, documents, and policies. No opaque scores.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- SECTION 1: DUAL ASYMMETRY -->
         <section id="model" class="content-section">
-            <div class="section-label">02. THE MODEL</div>
-            <div class="glass-card wide">
-                <h2>>> Dual Asymmetry Analysis</h2>
+            <div class="section-label">1. THE MODEL LAYER</div>
+            <div class="glass-card">
+                <h2>>> The Dual Asymmetry Model</h2>
                 <p>
-                    Tacitus is the only engine built on the <strong>Dual Asymmetry</strong> model. We don't just look for keywords; we look for the structural gaps between parties.
+                    Tacitus treats conflict as a dual asymmetry problem: <span class="accent">information asymmetry</span>
+                    – who knows what – and <span class="accent">narrative asymmetry</span> – who gets to say what it means.
+                    Durable resolution requires seeing, and then working on, both planes at once.
                 </p>
                 <div class="grid-2">
-                    <div class="card-cyber">
-                        <div class="panel-title" style="color: var(--neon-cyan)">LAYER 1</div>
-                        <h4>Information Asymmetry</h4>
-                        <p><strong>"Who knows what?"</strong></p>
-                        <ul style="list-style:none; font-size: 0.9rem; opacity: 0.8; margin-top: 10px; line-height: 1.8;">
-                            <li>> Extracts hard claims & evidence</li>
-                            <li>> Flags "mind-reading" assumptions</li>
-                            <li>> RAG-grounded policy verification</li>
+                    <div class="feature-box">
+                        <div class="icon">INFO_LAYER</div>
+                        <h3>Information Asymmetry</h3>
+                        <p class="feature-sub">“Who knows what?”</p>
+                        <ul class="terminal-list">
+                            <li>&gt; Extracts Evidence &amp; Claims from long email chains</li>
+                            <li>&gt; Flags mind‑reading and untested inferences</li>
+                            <li>&gt; Links behavior to specific policy clauses via RAG</li>
                         </ul>
                     </div>
-                    <div class="card-cyber">
-                        <div class="panel-title" style="color: var(--neon-purple)">LAYER 2</div>
-                        <h4>Narrative Asymmetry</h4>
-                        <p><strong>"Who tells the story?"</strong></p>
-                        <ul style="list-style:none; font-size: 0.9rem; opacity: 0.8; margin-top: 10px; line-height: 1.8;">
-                            <li>> Maps identity & status threats</li>
-                            <li>> Separates public vs. private positions</li>
-                            <li>> Identifies framing collisions</li>
+                    <div class="feature-box">
+                        <div class="icon">NARRATIVE_LAYER</div>
+                        <h3>Narrative Asymmetry</h3>
+                        <p class="feature-sub">“Who tells the story?”</p>
+                        <ul class="terminal-list">
+                            <li>&gt; Treats narratives as first‑class data objects</li>
+                            <li>&gt; Separates public framing from private negotiating positions</li>
+                            <li>&gt; Maps where identity, status, and recognition collide</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- SECTION 2: MULTI-AGENT ENGINE -->
         <section id="engine" class="content-section">
-            <div class="section-label">03. THE ENGINE</div>
+            <div class="section-label">2. THE ENGINE LAYER</div>
             <div class="glass-card wide">
-                <h2>>> Multi-Agent Architecture</h2>
+                <h2>>> The Multi‑Agent Council</h2>
                 <p>
-                    Tacitus is not a chatbot. It is a council of specialized agents that critique and refine each other before presenting a briefing to the human operator.
+                    Under the hood, Tacitus is a small council of specialized agents – intake, ontology mapper,
+                    argument miner, policy agent, common‑ground synthesizer, risk &amp; ethics, and briefing – orchestrated
+                    around a shared conflict graph. No single agent “decides”; they critique and refine each other, and a human
+                    owns the final move.
                 </p>
                 <div class="pipeline-viz">
                     <div class="step">
                         <span class="step-num">01</span>
                         <h4>Ingest</h4>
-                        <p>Secure, email-native connectors (Gmail/O365). No new portals.</p>
+                        <p>Email‑native connectors (Gmail / O365 / IMAP). No new portal; no lost context.</p>
                     </div>
+                    <div class="line"></div>
                     <div class="step">
                         <span class="step-num">02</span>
                         <h4>Mine</h4>
-                        <p>Agents extract actors, claims, and hidden narratives.</p>
+                        <p>Agents extract actors, issues, interests, narratives, and evidence into an ontology.</p>
                     </div>
+                    <div class="line"></div>
                     <div class="step">
                         <span class="step-num">03</span>
                         <h4>Ground</h4>
-                        <p>Policy Agent verifies claims against company documents (RAG).</p>
+                        <p>RAG links behaviors and claims to policies, contracts, and precedents.</p>
                     </div>
+                    <div class="line"></div>
                     <div class="step">
                         <span class="step-num">04</span>
                         <h4>Synthesize</h4>
-                        <p>Generates a human-readable "Decision Brief."</p>
+                        <p>Briefing agent renders the conflict graph into timelines, maps, and options.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- SECTION 3: CONFLICT GRAPH -->
+        <section id="graph" class="content-section">
+            <div class="section-label">3. THE GRAPH LAYER</div>
+            <div class="glass-card">
+                <h2>>> From Tangle to Crystal</h2>
+                <p>
+                    The canvas above is not a screensaver. It is a metaphor for what Tacitus does in production:
+                    a swarm of unstructured messages gradually resolves into a crystalline graph of actors, claims,
+                    narratives, and precedents – with “common ground” glowing at the center.
+                </p>
+                <div class="graph-legend">
+                    <div class="legend-item">
+                        <span class="legend-dot fact"></span>
+                        <span class="legend-label">Facts &amp; Evidence</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-dot narrative"></span>
+                        <span class="legend-label">Narratives &amp; Frames</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-dot shared"></span>
+                        <span class="legend-label">Shared Interests</span>
+                    </div>
+                </div>
+                <p class="hint">
+                    Scroll or move your cursor through the field: at the top of the page, the tangle dominates.
+                    As you descend into the stack, the structure coefficient increases and the swarm settles
+                    into a visible graph.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECTION 4: SCENARIOS -->
         <section id="scenarios" class="content-section">
-            <div class="section-label">04. DEPLOYMENT</div>
-            <div class="glass-card wide">
-                <h2>>> High-Stakes Interventions</h2>
-                <div class="grid-3">
-                    <div class="card-cyber">
-                        <h4>HR Investigations</h4>
-                        <p>Transform months of emotional email threads into audit-ready timelines. Automatically link alleged behaviors to specific clauses in your Employee Handbook.</p>
-                    </div>
-                    <div class="card-cyber">
-                        <h4>C-Suite Alignment</h4>
-                        <p>Reveal when executives are arguing past each other (e.g., "Cost" vs. "Identity" frames). Surface the hidden common ground to unlock strategic paralysis.</p>
-                    </div>
-                    <div class="card-cyber">
-                        <h4>Diplomacy & Treaty</h4>
-                        <p>Separate symbolic "red line" language from operative demands. Retrieve precedent from historical treaty databases to suggest viable compromise clauses.</p>
-                    </div>
+            <div class="section-label">4. DEPLOYMENT SCENARIOS</div>
+            <h2 class="section-heading">&gt;&gt; High‑Stakes, Cross‑Domain</h2>
+            <div class="grid-3">
+                <div class="card-cyber">
+                    <h4>HR Investigations</h4>
+                    <p>
+                        Six months of emotionally loaded threads turned into audit‑ready timelines.
+                        Tacitus links behavior to policy clauses and previous decisions, and surfaces unresolved questions
+                        for human investigators.
+                    </p>
+                </div>
+                <div class="card-cyber">
+                    <h4>C‑Suite Strategy</h4>
+                    <p>
+                        Reveals when executives are arguing from different frames – cost vs. identity, short‑term vs.
+                        long‑term – and pinpoints overlapping values like customer trust or talent retention.
+                    </p>
+                </div>
+                <div class="card-cyber">
+                    <h4>Diplomacy &amp; Peacebuilding</h4>
+                    <p>
+                        Separates symbolic language from operative demands, retrieves analogous treaty language,
+                        and proposes formulations consistent with both precedent and stated interests.
+                    </p>
                 </div>
             </div>
         </section>
 
+        <!-- FOOTER / ACCESS -->
         <footer id="access">
-            <div class="content-wrapper">
-                <div class="terminal-footer">
-                    <p style="color: var(--neon-cyan); margin-bottom: 10px;">root@tacitus:~$ initiate_contact_protocol</p>
-                    <p>System Status: <span class="status-ok">OPERATIONAL</span></p>
-                    <p>Privacy Level: <span class="status-ok">ENCLAVE ISOLATED</span></p>
-                    <br>
-                    <p class="copyright">© 2025 Tacitus Resolution Technologies. Augmentation, not automation.</p>
-                </div>
+            <div class="terminal-footer">
+                <p>&gt; system_status: <span class="status-ok">OPERATIONAL</span></p>
+                <p>&gt; human_in_loop: <span class="status-ok">REQUIRED</span></p>
+                <p>&gt; deployment_mode: <span class="status-ok">INVITE ONLY</span></p>
+                <br>
+                <a href="mailto:deploy@tacitus.me?subject=Tacitus%20Deployment%20Inquiry" class="cmd-link">
+                    root@tacitus:~$ initiate_deployment_sequence
+                </a>
             </div>
         </footer>
     </main>
